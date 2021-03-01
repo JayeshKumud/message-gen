@@ -1,0 +1,104 @@
+<table width="100%">
+  <tr>
+    <th>GetPortfolio</th>
+    <th>Request</th>
+    <th>Response</th>
+  </tr>
+  <tr>
+    <td width="30%">
+      <body>
+        <div class="content">
+          <ul class="tree">
+            <li>
+              <a>Lenguage Id</a>
+              <br />
+              <input
+                type="text"
+                class="input-text"
+                name="lenguageid"
+                [(ngModel)]="getPortfolio.lenguageid"
+              />
+            </li>
+            <li>
+              <a>Provider</a>
+              <br />
+              <input
+                type="text"
+                class="input-text"
+                name="provider"
+                [(ngModel)]="getPortfolio.provider"
+              />
+            </li>
+            <li>
+              <a>Agent</a>
+              <br />
+              <input
+                type="text"
+                class="input-text"
+                name="agent"
+                [(ngModel)]="getPortfolio.agent"
+              />
+            </li>
+            <li>
+              <a>Account</a>
+              <br />
+              <input
+                type="text"
+                class="input-text"
+                name="account"
+                [(ngModel)]="getPortfolio.account"
+              />
+            </li>
+            <li>
+              <a> <input type="checkbox" checked="checked" /> Sender</a>
+              <ul>
+                <li>
+                  <a>Company Id</a>
+                  <br />
+                  <input
+                    type="text"
+                    class="input-text"
+                    name="compid"
+                    [(ngModel)]="getPortfolio.sender.compid"
+                  />
+                </li>
+                <li>
+                  <a>Sub Id</a>
+                  <br />
+                  <input
+                    type="text"
+                    class="input-text"
+                    name="subid"
+                    [(ngModel)]="getPortfolio.sender.subid"
+                  />
+                </li>
+                <li>
+                  <a>Location Id</a>
+                  <br />
+                  <input
+                    type="text"
+                    class="input-text"
+                    name="locationid"
+                    [(ngModel)]="getPortfolio.sender.locationid"
+                  />
+                </li>
+                <li>
+                  <a>Password</a>
+                  <br />
+                  <input
+                    type="text"
+                    class="input-text"
+                    name="password"
+                    [(ngModel)]="getPortfolio.sender.password"
+                  />
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </body>
+    </td>
+    <td title="RESPONSE" width="35%"></td>
+    <td title="RESPONSE" width="35%"></td>
+  </tr>
+</table>
